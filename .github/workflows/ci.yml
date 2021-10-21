@@ -1,30 +1,33 @@
-name: CI
+name: CI/CD
 
 on:
   push:
-  pull_request:
-
-  workflow_dispatch:
+    branches: [ main ]
+  pull_request: 
+  workflow_dispatch: 
 
 jobs:
-  build:
+  BuildAndDeploy:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+        with:
+          submodules: 'true'
 
-      - name: Install hugo
+      - name: Install Hugo
         run: brew install hugo
 
-      - name: Build site and minify it
-        run: hugo --minify
-        
-      - name: Deploy to GitHub Pages
-        uses: s0/git-publish-subdir-action@develop
+      - name: Build website with Hugo
+        run: |
+          hugo --minify
+          
+      - name: Deploy with rsync
+        uses: easingthemes/ssh-deploy@main
         env:
-          REPO: self
-          BRANCH: gh-pages
-          FOLDER: public
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
+          SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_KEY }}
+          ARGS: "-rtvzP --compress-level 6"
+          SOURCE: "public/"
+          REMOTE_HOST: gabg.site
+          REMOTE_USER: ${{ secrets.DEPLOY_USER }}
+          TARGET: "/var/www/video.gabg.site"
