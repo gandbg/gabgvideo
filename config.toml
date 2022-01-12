@@ -1,8 +1,8 @@
-baseURL = "https://greenabg.github.io/gabgvideo/"
+baseURL = "https://video.gabg.site/"
 title = "GABG Video"
 languagecode = "it"
 author = "Francia & GABG"
-copyright = "Copyright © 2008–2019 Steve Francia, 2021 GABG" #supports html markup
+copyright = "Copyright © 2021 Green and Blue G" #supports html markup
 paginate = 3
 languageCode = "it"
 DefaultContentLanguage = "en"
