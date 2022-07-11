@@ -3,8 +3,8 @@ title: "L'oscuro futuro di Minecraft: Java Edition"
 date: 2022-07-11T00:52:34+02:00
 draft: false
 year: 2022
-youtubeId: false
-lbryUri: false
+youtubeId: Nwq_dwwJY1w
+lbryUri: GABG/l'oscuro-futuro-di-minecraft
 uncompressedName: oscuro futuro minecraft java.mkv
 ---
 
