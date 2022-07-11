@@ -1,7 +1,7 @@
 ---
 title: "Lista di tutti i video pubblicati da GABG"
 date: 2022-07-08T18:37:48+02:00
-draft: true
+draft: false
 nonVideo: true
 ---
 

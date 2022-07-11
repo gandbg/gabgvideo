@@ -1,7 +1,7 @@
 ---
 title: "L'oscuro futuro di Minecraft: Java Edition"
 date: 2022-07-11T00:52:34+02:00
-draft: true
+draft: false
 year: 2022
 youtubeId: false
 lbryUri: false
