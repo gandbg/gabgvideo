@@ -1,0 +1,18 @@
+.error-code{
+    text-align: center !important;
+    font-size: 150px !important;
+    cursor: default !important;
+    margin: 0 !important;
+}
+
+.error-message{
+    text-align: center !important;
+    font-size: 50px !important;
+    cursor: default !important;
+    margin-top: 0 !important;
+}
+
+.error-description{
+    text-align: center;
+    font-size: 30px;
+}

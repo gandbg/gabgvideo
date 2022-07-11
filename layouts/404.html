@@ -1,0 +1,16 @@
+{{ define "main" }}
+<link rel="stylesheet" href="/css/pages/404.css">
+
+<h1 class="error-code">404!</h1>
+<h1 class="error-message">Non Trovato</h1>
+
+<div class="error-description">
+    {{":exclamation:" | emojify}} La risorsa specificata non è stata trovata
+    <hr>
+    {{":question:" | emojify}} Probabilmente non è mai esistita, ma potrebbere anche essere stata spostata/rinominata<br>
+    {{":boom:" | emojify}} Oppure è esplosa
+    <hr>
+    {{":triangular_ruler:" | emojify}} Prova a controllare l'url per typo/errori di caps<br>
+	{{":cake:" | emojify}} Se non hai niente da fare puoi dare un'occhiata a tutti i possibili <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status" target="_blank" rel="noopener noreferrer">codici di stato HTTP</a> (<a href="https://developer.mozilla.org/fr/docs/Web/HTTP/Status" target="_blank" rel="noopeneer noreferrer">{{":fr:" | emojify}}</a>)
+</div>
+{{ end }}

@@ -1,0 +1,27 @@
+{{ define "main" }}
+	<link rel="stylesheet" href="/css/pages/single.css">
+
+	<h1 class="page-title">{{ .Title }}</h1>
+
+	{{ if eq .Params.nonVideo true }}
+	{{ else }}
+
+		{{ if not (eq .Params.youtubeId false) }}
+		<a href="https://www.youtube.com/watch?v={{.Params.youtubeId}}" target="_blank" rel="noopener noreferrer"><img src="/img/youtube-icon.svg" class="icon" alt="">YouTube</a>
+		{{ end }}
+
+		{{ if not (eq .Params.lbryUri false) }}
+		<a href="https://odysee.com/@{{.Params.lbryUri}}" target="_blank" rel="noopener noreferrer"><img src="/img/odysee-icon.svg" class="icon" alt="">Odysee</a>
+		{{ end }}
+
+		{{ if not (eq .Params.uncompressedName false) }}
+		<a href="https://storage.data.gabg.site/repo/uncompress-videos/{{.Params.uncompressedName}}" target="_blank" rel="noopener noreferrer"><img src="/img/video-icon.svg" class="icon" alt="">Video non compresso</a>
+		(<a href="/#info-video-non-compressi">Maggiori informazioni</a>)
+		{{ end }}
+
+	{{ end }}
+
+	<div class="page-content">
+		{{ .Content }}
+	</div>
+{{ end }}

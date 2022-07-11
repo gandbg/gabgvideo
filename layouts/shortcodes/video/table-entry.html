@@ -1,0 +1,11 @@
+{{ $page := .Site.GetPage (.Get 0) }}
+
+<tr>
+	<td><a href='{{trim (.Get 0) ".md"}}'>{{$page.Title}}</a></td>
+	<td><span>{{$page.Params.year}}</span></td>
+	<td>
+		<a href="https://www.youtube.com/watch?v={{$page.Params.youtubeId}}" target="_blank" rel="noopener noreferrer"><img src="/img/youtube-icon.svg" class="icon" alt="">YouTube</a>
+		<a href="https://odysee.com/@{{$page.Params.lbryUri}}" target="_blank" rel="noopener noreferrer"><img src="/img/odysee-icon.svg" class="icon" alt="">Odysee</a>
+		<a href="https://storage.data.gabg.site/repo/uncompress-videos/{{$page.Params.uncompressedName}}" target="_blank" rel="noopener noreferrer"><img src="/img/video-icon.svg" class="icon" alt="">Video non compresso</a>
+	</td>
+</tr>

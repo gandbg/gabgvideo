@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ if .IsHome }}Home - GABGVideo{{ else }}{{ .Title }} - GABGVideo{{ end }}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css" integrity="sha512-HqxHUkJM0SYcbvxUw5P60SzdOTy/QVwA1JJrvaXJv4q7lmbDZCmZaqz01UPOaQveoxfYRv1tHozWGPMcuTBuvQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+		<div class="navbar-brand">
+		  <a class="navbar-item" href="/">
+			<img src="/img/logo.svg" width="50" height="28">
+		  </a>
+		</div>
+
+		<div class="navbar-menu">
+		  <div class="navbar-start">
+			<div class="navbar-item has-dropdown is-hoverable">
+			  <a class="navbar-link">Tutti i video</a>
+
+			  <div class="navbar-dropdown">
+				<a class="navbar-item" href="/tutti-i-video">Tutti i video</a>
+				<hr class="navbar-divider">
+				<a class="navbar-item" href="/tutti-i-video/2021">2021</a>
+				<a class="navbar-item" href="/tutti-i-video/2022">2022</a>
+			  </div>
+			</div>
+		  </div>
+
+		  <div class="navbar-end">
+			<div class="navbar-item">
+			  <div class="buttons">
+				<a class="button is-primary" href="https://gabg.link/youtube"><strong>Canale Youtube</strong></a>
+				<a class="button is-primary" href="https://gabg.link/odysee"><strong>Canale Odysee</strong></a>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </nav>
+
+	  <main class="content">
+		<article>
+			<div class="has-text-centered">
+				{{ block "main" . }}{{ end }}
+			</div>
+		</article>
+	  </main>
+
+	  <footer class="footer">
+		<div class="has-text-centered">
+		  <p>
+			<strong>GABGVideo</strong> è Copyright &copy; 2022-present GABG<br>
+			Il codice sorgente è sotto licenza <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank" rel="noopener noreferrer">GPL v3.0</a>.<br>
+			Il contenuto del sito è sotto licenza <a href="https://www.gnu.org/licenses/fdl-1.3.html" target="_blank" rel="noopener noreferrer">FDL v1.3</a>.
+		  </p>
+		</div>
+
+		<div class="has-text-right has-text-centered-mobile">
+			<a href="https://bulma.io"><img src="/img/made-with-bulma-badge.png" alt="Made with Bulma" width="155"></a>
+		</div>
+	  </footer>
+</body>
+</html>
