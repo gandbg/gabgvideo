@@ -34,5 +34,9 @@ uncompressedName: oscuro futuro minecraft java.mkv
 + 07:13 - 10:21: [C418 - Chirp](https://www.youtube.com/watch?v=tB6r8w2S3aw)
 + 10:21 - 11:04: [C418 - Strad](https://www.youtube.com/watch?v=d6tV0cr9zYI)
 
+# Approfondimenti
++ [TheMisterEpic - Banned From Singleplayer? – Minecraft Java's DARK FUTURE...](https://www.youtube.com/watch?v=kEfyaAq90kg)
++ [AntVenom - The Downfall of Minecraft & Mojang... has begun?]
+
 [^1]: Il video è mostrato in forma restaurata nella risoluzione 1920x1080 a 60 FPS
 [^2]: Il video è in lingua inglese ed è stato doppiato in italiano
