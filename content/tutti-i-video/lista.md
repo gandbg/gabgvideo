@@ -24,7 +24,8 @@ nonVideo: true
 {{< video/table-entry "/video/2021/08/winget.md" >}}
 {{< video/table-entry "/video/2022/01/log4shell.md" >}}
 {{< video/table-entry "/video/2022/07/oscuro-futuro-minecraft-java.md" >}}
-{{< video/table-entry "/video/2022/07/fortnite.md" >}}
+{{< video/table-entry "/video/2022/07/fortnite.md" >}}.
+{{< video/table-entry "/video/2022/07/stoneblock-1.md" >}}
 {{< rawhtml >}}
 	</tbody>
 </table>
