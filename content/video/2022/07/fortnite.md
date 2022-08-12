@@ -1,7 +1,7 @@
 ---
 title: "Succedono cose nella stagione 3"
 date: 2022-07-29T21:55:25+02:00
-draft: true
+draft: false
 year: 2022
 youtubeId:
 lbryUri:
