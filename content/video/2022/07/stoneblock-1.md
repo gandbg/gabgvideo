@@ -1,10 +1,10 @@
 ---
 title: "Stoneblock Episodio #1: Iniziano gli scavi"
 date: 2022-08-12T14:07:15+02:00
-draft: true
+draft: false
 year: 2022
-youtubeId:
-lbryUri:
+youtubeId: 2GhjV2MmBqo
+lbryUri: GABG:4/iniziano-gli-scavi!-stoneblock-1-w:a
 uncompressedName: "stoneblock-1.mkv"
 ---
 

@@ -3,8 +3,8 @@ title: "Succedono cose nella stagione 3"
 date: 2022-07-29T21:55:25+02:00
 draft: false
 year: 2022
-youtubeId:
-lbryUri:
+youtubeId: mFeY3MWCR1o
+lbryUri: GABG:4/succedono-cose-nella-stagione-3-fortnite:a
 uncompressedName:
 ---
 
